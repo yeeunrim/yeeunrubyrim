@@ -1,0 +1,53 @@
+/* yeeunrubyrim.html 스타일 */
+
+/* all */
+*{margin: 0; padding: 0;}
+#container{width: 100%; height: 3000px; margin: 0 auto; box-sizing: border-box;}
+
+/* header */
+/* notice */
+header{height: 25px; border-bottom: 1px solid black; z-index: 100; background-color: black; z-index: -10;}
+header #notice{width: 100%; padding: 5px; position: absolute;
+  font-family: 'Mulish', sans-serif; font-size: 12px; text-align: center; color: whitesmoke;}
+
+/* menu(top) */
+#topmenu{font-family: 'Mulish', sans-serif; list-style: none;}
+#topmenu li p button{position: fixed; top: 13px; left: 10px; z-index: 150; border: none;
+ font-size: 20px; text-decoration: none; background: none; text-decoration: line-through;}
+#topmenu li .about{position: fixed; top: 13px; right: 10px; z-index: 150;
+  font-size: 20px; color: black; text-decoration: none;}
+#topmenu li a:hover{text-decoration: line-through;}
+/* menu(sub) */
+#topmenu li ul{background: whitesmoke; width: 300px; height: 700px; display: none; 
+  position: fixed; top: 0;}
+#topmenu > li:hover > ul{display: block; z-index: 100;} 
+#topmenu > li > ul > .submenu-position{position: absolute; top: 80px; line-height: 1.5;}
+#topmenu > li > ul > .submenu-position > li{padding: 8px 40px; text-align: left; list-style: none;}
+#topmenu > li > ul > .submenu-position > li > a{color: black; font-size: 17px; text-decoration: none;}
+#topmenu > li > ul > .submenu-position > li > a:hover{font-style: italic;}
+#topmenu > li > ul > li:last-child{position: absolute; top: 16px; right: 18px; margin: 0; padding: 0; list-style: none;}
+#topmenu > li > ul > li:last-child:hover > ul{display: none;}
+
+/* section */
+/* 배경이미지 */
+section{height: 2924px; border: none; box-sizing: border-box;}
+section #main-picture-right{border: none; width: 50%; height: 30%;
+  background: url(/images/IMG_3005.jpg) no-repeat; background-size: cover; float: right;}
+section #main-picture-left{clear: both; border: none; width: 50%; height: 30%; 
+  background: url(/images/IMG_3002.jpg) no-repeat; background-size: cover; z-index: -100;}
+/* 명언 */
+section #main-sentence{border: none; height: 820px; position: relative; z-index: -100;}
+section #main-sentence h1{font-family: 'Merriweather', serif; line-height: 2; 
+  letter-spacing: 0.1vw; font-size: 6vw; color: rgb(170, 1, 1); 
+  position: absolute; top: 220px; left: 45px;}
+
+/* footer */
+footer{height: 50px; border: none; padding: 0 10px; position: relative;}
+footer #comment{position: absolute; bottom: 10px; 
+  font-family: 'Mulish', sans-serif; font-size: 1.5vw;}
+footer #copyright{position: absolute; bottom: 10px; right: 10px; 
+  font-family: 'Mulish', sans-serif; font-size: 1.5vw;}
+footer #logo{position: fixed; left: 43%; bottom: 8px;}
+footer #logo .font-effect-neon{font-family: "Sofia", sans-serif; font-size: 1.7vw; 
+  text-shadow:  0 0 0.1em #fff, 0 0 0.2em #fff, 0 0 0.3em #fff, 0 0 0.4em black, 
+  0 0 0.6em gray, 0 0 0.8em gray, 0 0 1.0em gray, 0 0 1.2em gray;}

@@ -1,15 +1,103 @@
 <!DOCTYPE html>
-<html lang="en" lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/about.css">
+    <title>YEEUNRUBYRIM | ABOUT</title>
+    <!-- 글씨체 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
+    <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Mulish:wght@300&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
-    <link rel="sytlesheet" href="./css/about.css">
-    <title> ABOUT </title>
 </head>
 <body>
-    <p> 이름 : 임예은 <br>
-        생년월일 : 1999.12.15
-    </p>
+    <div id="container">
+        <!-- 상단 -->
+        <header>
+            <!-- 로고 -->
+            <div id="logo">
+               <p class="font-effect-neon">YEEUNRUBYRIM</p>
+            </div>
+
+            <!-- 메뉴 -->
+            <ul id="topmenu">
+                <li>
+                  <p><button onclick="showhide()" id="here">HERE</button></p>
+                  <ul id="submenu">
+                    <div class="submenu-position">
+                      <li><a href="https://m.blog.naver.com/PostList.naver?blogId=yeeene" target="_blank">BLOG</a></li>
+                      <li><a href="https://youtube.com/@yeeunrubyrim?feature=shared" target="_blank">YOUTUBE</a></li>
+                      <li><a href="https://www.instagram.com/yeeeuney/" target="_blank">INSTAGRAM</a></li>
+                      <li><a href="https://github.com/yeeunrim" target="_blank">GITHUB</a></li>
+                      <li><a href="html/about.html" target="_blank">ABOUT</a></li>
+                      <div class="info">
+                        <li><p>TEL | +82 010 4089 2878</p></li>
+                        <li><p>EMAIL | 1515eun@daum.net</p></li>
+                        <li><p>FROM | REPUBLIC OF KOREA 🇰🇷</p></li>
+                      </div>
+                    </div>
+                  </ul>
+                </li>
+                <!-- <li><a href="../index.html" class="home">HOME</a></li> -->
+              </ul>
+        </header>
+
+        <script id="header-script"> 
+            let sw = true;
+
+            function showhide(){
+                let x = document.getElementById("submenu");
+
+                if(sw == true){
+                    x.style.display = "block";
+                    x.style.zIndex = "100";
+                    sw = false;
+                    document.getElementById("here").innerHTML = "CLOSE";
+                } else{
+                    x.style.display = "none";
+                    sw = true;
+                    document.getElementById("here").innerHTML = "HERE";
+                }   
+            }
+          </script>
+
+        <!-- 내용 -->
+        <section id="who">
+            <div class="who-img">
+                <img src="../images/취업증명사진.JPG" alt="증명사진" width="30%">
+            </div>
+            <div class="who-info">
+                <p>| NAME |</p>
+                <p>임예은<small>(YEEUNRIM)</small></p>
+                <p>| BIRTHDAY |</p>
+                <p>DEC.15TH.1999</p>
+                <p>| EMAIL </p>
+                <p>1515eun@daum.net</p>
+            </div>
+        </section>
+
+        <section id="edcucation">
+            
+        </section>
+
+        <section id="career">
+
+        </section>
+
+        <section id="certificate">
+
+        </section>
+
+        <section id="hobbit">
+
+        </section>
+        
+        <!-- 하단 -->
+        <footer>
+            <div id="comment">THANKS</div>
+            <div id="copyright">2023 © YEEUNRIM</div>
+        </footer>
+    </div> <!-- container 끝 -->
 </body>
 </html>

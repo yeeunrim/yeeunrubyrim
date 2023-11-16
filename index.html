@@ -4,13 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/yeeunrubyrim.css">
-  <title>yeeunrubyrim | Wepage</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <title>YEEUNRUBYRIM | HOME</title>
   <!-- 글씨체 -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans">
   <link href="https://fonts.googleapis.com/css2?family=Kenia&family=Mulish:wght@300&display=swap" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Athiti' rel='stylesheet'>
+  <!-- 파비콘 -->
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
 </head>
 
 <body>
@@ -23,29 +28,35 @@
       </div>
 
       <!-- 메뉴 -->
-      <div id="menu">
-        <p>HERE</p>
-        <a href="./html/about.html">ABOUT</a>
-      </div>
-      <!-- <div id="menu">
-        <nav>
-          <ul>
-              <li>
-                  <a href="https://m.blog.naver.com/PostList.naver?blogId=yeeene" target="_blank"> BLOG </a> 
-              </li>
-              <li>
-                  <a href="https://youtube.com/@yeeunrubyrim?feature=shared" target="_blank"> YOUTUBE </a>
-              </li>
-              <li>
-                  <a href="https://www.instagram.com/yeeeuney/" target="_blank"> INSTAGRAM </a> 
-              </li>
-              <li>
-                  <a href="https://github.com/yeeunrim" target="_blank"> GITHUB </a>
-              </li>
+      <ul id="topmenu">
+        <li>
+          <p><button onclick="show()">HERE</button></p>
+          <ul id="submenu">
+            <div class="submenu-position">
+              <li><a href="https://m.blog.naver.com/PostList.naver?blogId=yeeene" target="_blank">BLOG</a></li>
+              <li><a href="https://youtube.com/@yeeunrubyrim?feature=shared" target="_blank">YOUTUBE</a></li>
+              <li><a href="https://www.instagram.com/yeeeuney/" target="_blank">INSTAGRAM</a></li>
+              <li><a href="https://github.com/yeeunrim" target="_blank">GITHUB</a></li>
+              <li><a href="html/about.html" target="_blank">ABOUT</a></li>
+            </div>
+            <li><button onclick="hide()">X</button></li>
           </ul>
-       </nav>
-      </div> -->
+        </li>
+        <li><a href="./html/about.html" class="about">ABOUT</a></li>
+      </ul>
     </header>
+
+    <script id="header-script"> 
+      function hide(){
+        let x = document.getElementById("submenu");
+        x.style.display = "none";
+      }
+
+      function show(){
+        let x = document.getElementById("submenu");
+        x.style.display = "block";
+      }
+    </script>
 
     <!-- 내용 -->
     <section>
